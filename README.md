@@ -7,10 +7,10 @@ Deployment
 
 To deploy this project run
 
-docker run -d --platform linux/amd64 --restart always --name polybot docker.io/daniatalla/polybot:v1
+docker run -d --platform linux/amd64 --restart always --name polybot docker.io/avibendersky/polybot:v1
 If your machine is based on arm64 (m1 mac, etc..) run this instead
 
-docker run -d --platform linux/arm64 --restart always --name polybot docker.io/daniatalla/polybot:v1
+docker run -d --platform linux/arm64 --restart always --name polybot docker.io/avibendersky/polybot:v1
 
 inorder to download a video just send it the words:
 "Download this video" and then insert the video name you want it to download like so.. 

@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                withCredentials([usernamePassword(credentialsId: 'git-hub-ron', passwordVariable: 'pass', usernameVariable: 'user')]) {
+                withCredentials([usernamePassword(credentialsId: 'avi', passwordVariable: 'pass', usernameVariable: 'user')]) {
 
 
                 sh '''

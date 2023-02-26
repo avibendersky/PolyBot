@@ -7,7 +7,7 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'pass', usernameVariable: 'user')]) {
 
                 bat "docker build -t harta ."
-                bat "docker login --password $pass --user $user"
+                bat "docker login -u $user -p $pass"
                 }
             }
         }

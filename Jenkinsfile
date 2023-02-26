@@ -13,12 +13,12 @@ pipeline {
         }
         stage('Stage II') {
             steps {
-                sh 'echo "stage II..."'
+                bat 'echo "stage II..."'
             }
         }
         stage('Stage III ...') {
             steps {
-                sh 'echo echo "stage III..."'
+                bat 'echo echo "stage III..."'
             }
         }
     }

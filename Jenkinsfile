@@ -8,7 +8,7 @@ pipeline {
 
                 bat "docker build -t polybot ."
                 bat "docker login -u $user -p $pass"
-                bat "docker push avibendersky/polybot:v0.1"
+                bat "docker push avibendersky/polybot:v1"
                 }
             }
         }

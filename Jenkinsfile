@@ -8,7 +8,7 @@ pipeline {
 
                 bat "docker build -t harta ."
                 bat "docker login -u $user -p $pass"
-                bat "docker image push harta:v0.1  "
+                bat "docker push harta:v0.1"
                 }
             }
         }

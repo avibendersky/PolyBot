@@ -13,9 +13,9 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'pass', usernameVariable: 'user')]) {
 
-                bat "docker build -t avibendersky/polybot-jenkins:${env.BUILD_NUMBER} ."
+                bat "docker build -t avibendersky/polybot-jenkins:1.0.${env.BUILD_NUMBER} ."
                 bat "docker login -u $user -p $pass"
-                bat "docker push avibendersky/polybot-jenkins:${env.BUILD_NUMBER}"
+                bat "docker push avibendersky/polybot-jenkins:1.0.${env.BUILD_NUMBER}"
                 }
             }
         }

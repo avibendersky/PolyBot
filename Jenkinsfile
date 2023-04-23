@@ -9,7 +9,7 @@ pipeline {
 
     agent {
     docker {
-        image '<image-url>'
+        image 'jenkinsagemt:latest'
         args  '--user root -v /var/run/docker.sock:/var/run/docker.sock'
     }
 }

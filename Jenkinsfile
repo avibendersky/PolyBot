@@ -6,14 +6,14 @@ pipeline {
     disableConcurrentBuilds()
 
     }
-
-    agent {
-    docker {
-        image 'jenkinsagent:latest'
-        args  '--user root -v /var/run/docker.sock:/var/run/docker.sock'
-    }
-}
-
+agent any
+ //  agent {
+ //   docker {
+//         image 'jenkinsagent:latest'
+//         args  '--user root -v /var/run/docker.sock:/var/run/docker.sock'
+//     }
+// }
+//
 
     stages {
         stage('Build') {
